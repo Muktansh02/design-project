@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Integration</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div id="chat"></div>
+    <input type="text" id="message" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+            var message = $('#message').val();
+            $.ajax({
+                url: 'http://localhost:5000/api/chat', // Update the URL to match your Flask endpoint
+                type: 'POST', // Send a POST request
+                contentType: 'application/json',
+                data: JSON.stringify({message: message}),
+                success: function(data) {
+                    $('#chat').append('<p>You: ' + message + '</p>');
+                    $('#chat').append('<p>Chatbot: ' + data.response + '</p>');
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error sending message:', error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

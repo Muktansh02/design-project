@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>HealthHub</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- JavaScript File -->
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body onload="myFunction()">
+  <div class="loading-wrapper">
+    <img src="logo.png" id="loading" />
+  </div>
+
+  <!-- Back to top button -->
+  <a href="#header" id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <header id="header">
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!"> <img src="hub.png" alt="Logo" class="logo" /></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="#services">CONTACT US </a></li>
+        </ul>
+      </div>
+      <button class="login-button"><a href="login.html">SignUp / Login</a></button>
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+          height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES </a></li>
+        <li><a href="#services">CONTACT US </a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome to HealthHub</h1>
+      <h3>Transform your health, transform your life.</h3>
+      <a href="#services" class="button-34" alt="Explore">Explore</a>
+    </div>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h3><span style="color: #08D9D6; font-size: 3.5rem;">MEET OUR DOCTORS</span></h3>
+
+    <div class="box">
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="ishan.jpeg" alt="" loading="lazy">
+        <h5>Dr.Ishan Awasthi</h5>
+        <div class="pra">
+          <p>Member</p>
+          <a href="https://github.com/"><button>Let's Connect</button></a>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="dawood.jpeg" alt="chaitri" loading="lazy">
+        <h5>Dr.Dawood Ibrahim</h5>
+        <div class="pra">
+          <p class="p">Member</p>
+          <a href="https://github.com/"><button class="he">Let's Connect</button></a>
+        </div>
+
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="osama.jpeg" alt="sasanka" loading="lazy">
+        <h5>Dr.Osama Bin Laden</h5>
+        <div class="pra">
+          <p>Member</p>
+          <a href="https://github.com/"><button>Let's Connect</button></a>
+        </div>
+        
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h1>Our Services</h1>
+    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+      <div class="responsive audio">
+        <div class="round-image">
+          <img src="audio.png" alt="audio" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Telemedicine Consultations</h2>
+          <p>
+            Access specialized healthcare professionals remotely for consultations and medical advice.
+          </p>
+          <a href="html/audioTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="reading.png" alt="read" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Symptom Analysis</h2>
+          <p>
+            Utilize advanced machine learning algorithms to accurately analyze symptoms and provide personalized healthcare recommendations.          </p>
+          <a href="html/readingTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga">
+        <div class="round-image">
+          <img src="yoga.png" alt="yoga" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Doctor Matching</h2>
+          <p>
+            Seamlessly connect with specialized doctors who are best suited to address your healthcare needs based on symptom analysis.          </p>
+          <a href="/Pages/YogaTherapy/index.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh">
+        <div class="round-image">
+          <img src="laughing.png" alt="laughing" />
+        </div>
+        <div class="description">
+          <h2>Chatbot Assistance</h2>
+          <p>
+            Interact with a responsive chatbot powered by Dialogflow for instant assistance and information regarding healthcare queries.          </p>
+          <a href="html/laughTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive talk">
+        <div class="round-image">
+            <img src="talking.png" loading="lazy" alt="talking" />
+        </div>
+        <div class="description">
+          <h2>Personalized Health Plans</h2>
+          <p>
+            Receive customized health plans tailored to your specific needs and requirements for optimal well-being.          </p>
+          <a href="html/talkingTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor">
+        <div class="round-image">
+            <img src="doctor.png" alt="Doctor Image">
+        </div>
+        <div class="description">
+          <h2>Medication Management</h2>
+          <p>
+            Effectively manage your medications with reminders, dosage information, and tracking features for improved adherence.          </p>
+          <a href="https://www.practo.com/counselling-psychology" target="_blank">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div class="responsive child">
+        <div class="round-image">
+          <img src="child.jpg" alt="child" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Health Monitoring Devices</h2>
+          <p>
+            Integrate and track vital health metrics using compatible health monitoring devices for proactive health management.          </p>
+          <a href="./html/childTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div class="responsive spiritual">
+        <div class="round-image">
+          <img src="spiritualtherapy.jpg" alt="spiritual" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Health Education Resources</h2>
+          <p>
+            Access a comprehensive library of educational resources and articles covering various health topics to empower informed decision-making and lifestyle choices.          </p>
+          <a href="./html/spirituality.html" target="_blank">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div class="responsive special">
+        <div class="round-image">
+          <img src="specialtherapy.jpg" alt="special" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Mental Health Support</h2>
+          <p>
+            Access resources and professional support for mental health concerns, fostering emotional well-being and resilience.          </p>
+          <a href="./html/specialTherapy.html" target="_blank">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faq section -->
+  <section class="faq">
+    <div class="faq_heading">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is HealthHub?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>HealthHub is a revolutionary platform designed to improve healthcare accessibility by leveraging advanced technologies for symptom analysis and personalized doctor recommendations.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How does HealthHub work?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>HealthHub utilizes machine learning algorithms to analyze user-input symptoms accurately. Based on this analysis, it offers personalized healthcare recommendations and connects patients with specialized doctors promptly.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>Why is accurate symptom analysis important?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p> Accurate symptom analysis is crucial for effective healthcare decision-making. It ensures that patients receive personalized and appropriate medical recommendations tailored to their specific needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How does HealthHub ensure privacy and security?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>HealthHub implements robust security measures, including end-to-end encryption, to safeguard user data and address privacy concerns during symptom analysis and doctor recommendations.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What technologies are used in HealthHub?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>HealthHub employs various advanced technologies such as machine learning algorithms for symptom analysis, AI-driven matching for doctor recommendations, Dialogflow for chatbot development, MySQL for database management, and Firebase Authentication for user authentication.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How does HealthHub facilitate connections between patients and doctors?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>HealthHub features an AI-driven recommendation system that matches patients with suitable specialized doctors based on symptom analysis, facilitating timely connections and improving overall healthcare accessibility.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>Is HealthHub user-friendly?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Yes, HealthHub is designed to be user-friendly, providing a seamless and intuitive platform that breaks down barriers in accessing specialized healthcare services.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>Can I access HealthHub from anywhere?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Yes, HealthHub is deployed on cloud services using Heroku and Netlify, ensuring accessibility from anywhere with an internet connection.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How does HealthHub ensure the accuracy of doctor recommendations?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>HealthHub continuously refines and improves its AI-driven recommendation system through regular updates and feedback loops to ensure the accuracy of doctor recommendations.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What are the benefits of using HealthHub?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>By using HealthHub, users experience empowerment and engagement through improved accessibility to specialized healthcare services, personalized healthcare recommendations, and timely connections with specialized doctors.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- footer start -->
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <a href="#" style="text-decoration: none;" class="footercontent">
+          <h2 class="footerheading">HealthHub</h2>
+          <p class="footerpara">Go StressFree</p>
+        </a>
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Bennett University, Greater Noida</p>
+          <p class="email-id"><a href="mailto:lifelift@gmail.com">HealthHub@gmail.com</a></p>
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li>
+              <a href="#">Code Of Conduct</a>
+            </li>
+            <li>
+              <a href="https://github.com/illunise/hackathon-project">Contribute</a>
+            </li>
+            <li>
+              <a href="#">Donate</a>
+            </li>
+          </ul>
+        </div>
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="">Telemedicine Consultations</a>
+            </li>
+            <li>
+              <a href="">Symptom Analysis</a>
+            </li>
+            <li>
+              <a href="">Doctor Matching</a>
+            </li>
+            <li>
+              <a href="">Chatbot Assistance</a>
+            </li>
+            <li>
+              <a href="">Personalized Health Plans</a>
+            </li>
+            <li>
+              <a href="">Medication Management</a>
+            </li>
+            <li>
+              <a href="">Mental Health Support</a>
+            </li>
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+            <ul>
+              <a href="https://twitter.com" target="_blank">
+                <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then((reg) => console.log('Success', reg.scope))
+          .catch((err) => console.log('Error', err))
+      })
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
